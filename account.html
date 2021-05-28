@@ -281,6 +281,44 @@
         stroke="#F96D00" />
     </svg></div>
 
+  <!-- modal -->
+  <div class="modal" tabindex="-1" id="reminder">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Pesanan Belum Selesai</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Anda memiliki pesanan yang belum diselesaikan. Apakah anda berminat untuk melanjutkan pesanan tersebut ?
+          </p>
+          <p>Detail pesanan yang belum diselesaikan :</p>
+          <div class="room">
+            <a href="rooms-single.html" class="img d-flex justify-content-center align-items-center"
+              style="background-image: url(images/banner_casava_durian_cottage.jpg);">
+              <div class="icon d-flex justify-content-center align-items-center">
+                <span class="icon-search2"></span>
+              </div>
+            </a>
+            <div class="text p-3 text-center">
+              <h3 class="mb-3"><a href="rooms-single.html">Cassava & Durian Cottage</a></h3>
+              <p><span class="price mr-2">Rp 300.000</span> <span class="per">untuk 3 hari</span></p>
+              <ul class="list">
+                <li><span>Tanggal Menginap :</span> 20 Juli - 23 Juli</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+          <a type="button" class="btn btn-primary" href="index.html">Ya, Lanjutkan Pesanan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -300,6 +338,12 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $('#reminder').modal('show');
+    });
+  </script>
 
 </body>
 
